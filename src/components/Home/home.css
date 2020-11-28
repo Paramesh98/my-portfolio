@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400,400italic);
+.App-header {
+  background-color: #090909;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-main {
+  min-height: 95vh;
+}
+
+.App-footer {
+  min-height: 5vh;
+}
+
+.particle {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.home_div {
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+}
+
+._card {
+  padding-top: 280px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 122, 235, 1),
+    rgb(0, 122, 235, 0)
+  );
+}
+._heading {
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.home_div {
+  /* background: url(https://images.unsplash.com/photo-1452723312111-3a7d0db0e024?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450.jpg) */
+  background: url(https://images.unsplash.com/photo-1534609146522-5d8de8a10058?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80)
+    no-repeat left center / cover;
+  background-attachment: fixed;
+  color: #fff;
+}

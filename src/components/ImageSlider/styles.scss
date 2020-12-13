@@ -21,10 +21,12 @@
   align-items: middle;
 
   a {
-    color: #dee2e6;
-    &:hover {
-      color: #fff;
+    color: #fff;
       text-decoration: none;
+    &:hover {
+      
+      color: #dee2e6;
+    text-decoration: none;
     }
   }
 }

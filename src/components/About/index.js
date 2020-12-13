@@ -2,7 +2,7 @@ import * as React from "react";
 import "./styles.css";
 import Me from "../../assets/me.jpg";
 import { Grid } from "@material-ui/core";
-import Pdf from "../../assets/new.pdf";
+import Pdf from "../../assets/paramesh_resume.pdf";
 
 const values = ["About Me", "About Paramesh Krishna"];
 
@@ -71,7 +71,7 @@ const Example = () => {
         </div>
         {/* </GlitchClip> */}
       </Grid>
-      <Grid item md={6}>
+      <Grid style={{ background: " #00000091" }} item md={6}>
         <div className="about_container">
           <p>
             The name’s PARAMESH KRISHNA. I am a tireless seeker of knowledge,
@@ -93,7 +93,13 @@ const Example = () => {
           </p>
           <p>
             Wondering if I might be a good fit for your company? checkout my{" "}
-            <a href={Pdf} download>
+            <a
+              style={{ color: "skyblue" }}
+              download
+              target="_blank"
+              href={Pdf}
+              download
+            >
               resume{" "}
             </a>
           </p>

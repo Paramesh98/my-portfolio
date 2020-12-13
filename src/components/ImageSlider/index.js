@@ -13,19 +13,19 @@ function ImageSlider() {
             target="_blank"
           >
             <Icon.Facebook size={100}></Icon.Facebook>
-            <h4 style={{ marginTop: "20px" }}>Facebook</h4>
+            <h3 style={{ marginTop: "20px" }}>Facebook</h3>
           </a>
         </div>
         <div style={{ background: "#4183c4" }} className="card_style">
           <a href="https://github.com/Paramesh98" target="_blank">
             <Icon.GitHub size={100}></Icon.GitHub>
-            <h4 style={{ marginTop: "20px" }}>Github</h4>
+            <h3 style={{ marginTop: "20px" }}>Github</h3>
           </a>
         </div>
         <div style={{ background: " #00a0d1" }} className="card_style">
           <a href="https://twitter.com/ParameshKrishn5" target="_blank">
             <Icon.Twitter size={100}></Icon.Twitter>
-            <h4 style={{ marginTop: "20px" }}>Twitter</h4>
+            <h3 style={{ marginTop: "20px" }}>Twitter</h3>
           </a>
         </div>
         <div style={{ background: "#0e76a8" }} className="card_style">
@@ -34,13 +34,13 @@ function ImageSlider() {
             target="_blank"
           >
             <Icon.Linkedin size={100}></Icon.Linkedin>
-            <h4 style={{ marginTop: "20px" }}>Linkedin</h4>
+            <h3 style={{ marginTop: "20px" }}>Linkedin</h3>
           </a>
         </div>
         <div style={{ background: "#db4a39" }} className="card_style">
           <a href="mailto:parameshkrishna98@gmail.com" target="_blank">
             <Icon.Mail size={100}></Icon.Mail>
-            <h4 style={{ marginTop: "20px" }}>Mail</h4>
+            <h3 style={{ marginTop: "20px" }}>Mail</h3>
           </a>
         </div>
       </ReactCardCarousel>

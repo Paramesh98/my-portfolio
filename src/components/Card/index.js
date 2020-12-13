@@ -7,10 +7,9 @@ function Card() {
   return (
     <div style={{ position: "relative" }}>
       <ul class="deck">
-        <li class="deck__item deck__item--facebook">
+        {/* <li class="deck__item deck__item--facebook">
           <a class="deck__link" href="#">
             <Icon.Facebook size={100}></Icon.Facebook>
-            {/* <span class="deck__icon fontawesome-facebook"></span> */}
             <span
               style={{ display: "block", marginTop: "30px" }}
               class="deck__label"
@@ -18,7 +17,7 @@ function Card() {
               Facebook
             </span>
           </a>
-        </li>
+        </li> */}
         <li class="deck__item deck__item--github">
           <a class="deck__link" href="#">
             <Icon.GitHub size={100}></Icon.GitHub>

@@ -7,7 +7,7 @@ function ImageSlider() {
   return (
     <div className="container_style">
       <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
-        <div style={{ background: "#3b5998" }} className="card_style">
+        {/* <div style={{ background: "#3b5998" }} className="card_style">
           <a
             href="https://www.facebook.com/paramesh.paramesh.180072"
             target="_blank"
@@ -15,7 +15,7 @@ function ImageSlider() {
             <Icon.Facebook size={100}></Icon.Facebook>
             <h3 style={{ marginTop: "20px" }}>Facebook</h3>
           </a>
-        </div>
+        </div> */}
         <div style={{ background: "#4183c4" }} className="card_style">
           <a href="https://github.com/Paramesh98" target="_blank">
             <Icon.GitHub size={100}></Icon.GitHub>

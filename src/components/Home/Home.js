@@ -23,7 +23,8 @@ function Home() {
       </div>
       <div className="about_book">
         <h3 className="_heading">
-          <DecriptText values={["About Me", "About Paramesh Krishna"]} />
+          {/* <DecriptText values={["About Me", "About Paramesh Krishna"]} /> */}
+          About Me
         </h3>
         <AboutBook />
       </div>
@@ -31,14 +32,16 @@ function Home() {
       <div className="_project">
         {/* <Heading /> */}
         <h3 className="_heading">
-          <DecriptText values={["Projects Undertaken", "Projects Done"]} />
+          {/* <DecriptText values={["Projects Undertaken", "Projects Done"]} /> */}
+          Projects Done
         </h3>
         {/* <Contact /> */}
         <Project />
       </div>
       <div>
         <h3 className="_heading">
-          <DecriptText values={["Contact Me", "Contact Paramesh Krishna "]} />
+          {/* <DecriptText values={["Contact Me", "Contact Paramesh Krishna "]} /> */}
+          Contact Me
         </h3>
       </div>
       <div>

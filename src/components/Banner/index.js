@@ -1,14 +1,13 @@
 import React from "react";
 import "./styles.css";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import ReactTypingEffect from "react-typing-effect";
-import { Link } from "react-router-dom";
+import { Grid } from "@material-ui/core";
 
 function Banner() {
   return (
-    <Container className="home-left">
-      <Row className="home-left-main">
-        <Col md={12} className="home-left-main-col">
+    <Grid container className="home-left">
+      <div className="home-left-main">
+        <Grid item md={12} className="home-left-main-col">
           <h1 className="first-line">Hello!</h1>
           <h2 className="second_line">
             I am <strong>Parameh Krishna</strong>
@@ -36,36 +35,9 @@ function Banner() {
             />
           </h3>
           <br />
-          {/* <Button
-            variant="outline-light"
-            size="lg"
-            className="home-left-aboutmme-btn"
-          >
-            <Link
-              to="/about"
-              style={{ textDecoration: "none", color: "white" }}
-              className="home-left-aboutme"
-            >
-              About Me
-            </Link>
-          </Button>{" "}
-          &nbsp;
-          <Button
-            variant="outline-light"
-            size="lg"
-            className="home-left-aboutmme-btn"
-          >
-            <Link
-              style={{ textDecoration: "none", color: "white" }}
-              to="/contact"
-              className="home-left-aboutme"
-            >
-              Contact Me
-            </Link> */}
-          {/* </Button> */}
-        </Col>
-      </Row>
-    </Container>
+        </Grid>
+      </div>
+    </Grid>
   );
 }
 

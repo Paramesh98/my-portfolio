@@ -1,10 +1,5 @@
 import * as React from "react";
-import { Row, Col, Container, Card } from "react-bootstrap";
-import { useDencrypt } from "use-dencrypt-effect";
 import "./styles.css";
-import ReactTypingEffect from "react-typing-effect";
-import GlitchClip from "react-glitch-effect/core/Clip";
-import BouncingText from "react-bouncing-text";
 import Me from "../../assets/me.jpg";
 import { Grid } from "@material-ui/core";
 import Pdf from "../../assets/new.pdf";

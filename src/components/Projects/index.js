@@ -22,6 +22,7 @@ import Covid from "../../assets/covidtracker.png";
 import Budget from "../../assets/budget-calculator.png";
 import ImageGallery from "../../assets/image-gallery.png";
 
+
 import "./styles.css";
 import { Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
@@ -129,9 +130,9 @@ function Project() {
   return (
     <MuiThemeProvider theme={createMuiTheme(theme)}>
       <div className="App">
-        <Grid container>
+        <Grid container className="grid_container">
           {projects.map((item) => (
-            <Grid style={{ zIndex: 9 }} item mt={2} sm={12} md={3}>
+            <Grid className="item" style={{ zIndex: 9 }} item mt={2} sm={12} md={3}>
               <a
                 target="_blank"
                 style={{ textDecoration: "none" }}

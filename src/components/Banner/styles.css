@@ -48,3 +48,19 @@
 .home-left-aboutmme-btn:hover {
   background: #666666;
 }
+
+
+@media only screen and (max-width: 500px) {
+  .banner{
+    top:115px;
+  }
+       .first-line {
+    font-size: 20px;
+       }
+       .second_line {
+    font-size: 20px;
+}
+.typical h1{
+  font-size: 20px;
+}
+        }

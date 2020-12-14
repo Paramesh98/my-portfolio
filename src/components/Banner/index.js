@@ -22,6 +22,7 @@ function Banner() {
               text={" Mern Stack Developer"}
               cursorRenderer={(cursor) => <h1>{cursor}</h1>}
               speed="100"
+              className="typical"
               displayTextRenderer={(text, i) => {
                 return (
                   <h1>

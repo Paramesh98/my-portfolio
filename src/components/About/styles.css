@@ -1,5 +1,4 @@
-.about_image {
-}
+
 
 .image_container {
   position: relative;
@@ -30,4 +29,10 @@
   padding: 30px 40px;
   text-align: justify;
   font-size: 25px;
+}
+@media only screen and (max-width: 500px) {
+  .about_container {
+  
+  font-size: 20px;
+}
 }

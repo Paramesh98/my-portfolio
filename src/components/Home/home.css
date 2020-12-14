@@ -54,3 +54,10 @@
   background-attachment: fixed;
   color: #fff;
 }
+
+
+@media only screen and (max-width: 500px) {
+          .banner {
+            top:115px;
+}
+        }

@@ -9,6 +9,12 @@
   text-transform: uppercase;
   border-radius: 10px;
   box-sizing: border-box;
+    @media only screen and (max-width: 500px) {
+          width: 200px;
+    height: 220px;
+    padding-top: 50px;
+        }
+
 }
 
 .container_style {
@@ -29,4 +35,8 @@
     text-decoration: none;
     }
   }
+   @media only screen and (max-width: 500px) {
+       height: 50vh;
+        }
+ 
 }

@@ -4,14 +4,13 @@ import ReactCardCarousel from "react-card-carousel";
 import * as Icon from "react-feather";
 
 function ImageSlider() {
-  const [size,setSize] = React.useState(100)
+  const [size, setSize] = React.useState(100);
 
-  React.useEffect(() =>{
-if(window.screen.availWidth < 500){
-  setSize(50)
-}
-
-  },[])
+  React.useEffect(() => {
+    if (window.screen.availWidth < 500) {
+      setSize(50);
+    }
+  }, []);
   return (
     <div className="container_style">
       <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
@@ -38,7 +37,7 @@ if(window.screen.availWidth < 500){
         </div>
         <div style={{ background: "#0e76a8" }} className="card_style">
           <a
-            href="https://www.linkedin.com/in/paramesh-krishna-070222166/"
+            href="https://www.linkedin.com/in/parameshwar-k-070222166/"
             target="_blank"
           >
             <Icon.Linkedin size={size}></Icon.Linkedin>

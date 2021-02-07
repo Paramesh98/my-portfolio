@@ -10,7 +10,7 @@ function Banner() {
         <Grid item md={12} className="home-left-main-col">
           <h1 className="first-line">Hello!</h1>
           <h2 className="second_line">
-            I am <strong>Parameh Krishna</strong>
+            I am <strong>Paramesh Krishna</strong>
           </h2>
           <h3>
             <ReactTypingEffect

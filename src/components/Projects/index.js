@@ -1,8 +1,8 @@
 import React from "react";
 import {
-  withStyles,
   MuiThemeProvider,
   createMuiTheme,
+  createTheme,
 } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import Card from "@material-ui/core/Card";
@@ -23,88 +23,178 @@ import Ecommerce from "../../assets/ecommerce.png";
 import Instagram from "../../assets/instagram.png";
 import MobileApp from "../../assets/mobile-app.png";
 import WaterBottle from "../../assets/water-bottle.png";
+import PostWithRtkQuery from "../../assets/post-with-rtk-query.png";
+import SmileApp from "../../assets/smile-app.png";
+import SmileWebApp from "../../assets/smie-web-app.png";
 import Covid from "../../assets/covidtracker.png";
+import ReduxToolkit from "../../assets/redux-toolkit.png";
 import Budget from "../../assets/budget-calculator.png";
 import ImageGallery from "../../assets/image-gallery.png";
 
 import "./styles.css";
-import { Grid } from "@material-ui/core";
+import { Box, Grid, Tooltip } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
-// const faces = [
-//   "http://i.pravatar.cc/300?img=1",
-//   "http://i.pravatar.cc/300?img=2",
-//   "http://i.pravatar.cc/300?img=3",
-//   "http://i.pravatar.cc/300?img=4",
-// ];
-
-const faces = [ReactIcon, Firebase, Mongdb, ReactNative, Redux];
+// Updated project data with avatar images in the "madeWith" array
 const projects = [
   {
     title: "E-commerce",
     message:
       "Fully functioning e-commerce app with customer/seller/admin login",
     image: Ecommerce,
-    madeWith: ["react", "redux", "node", "mongo"],
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux" },
+      { src: Node, name: "Node" },
+      { src: Mongo, name: "Mongo" },
+    ],
     link: "https://heuristic-fermi-7e0d8f.netlify.app/",
+    disabled: true,
   },
-  {
-    title: "Calender",
-    message: "A google like calender with react and momentjs",
-    image: Calender,
-    madeWith: ["react"],
-    link: "https://calender-app-98.netlify.app/",
-  },
+  // {
+  //   title: "Calender",
+  //   message: "A google like calendar with react and momentjs",
+  //   image: Calender,
+  //   madeWith: [{ src: ReactIcon, name: "React" }],
+  //   link: "https://calender-app-98.netlify.app/",
+  // },
   {
     title: "Social Media App",
     message: "Social media app made with react node mongodb",
     image: Instagram,
-    madeWith: ["react", "node", "mongo"],
-    link: "https://parameshkrishna-insttagram.netlify.app/",
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Node, name: "Node" },
+      { src: Mongo, name: "Mongo" },
+    ],
+    link: "https://parameshkrisna-insttagram.netlify.app/",
+    disabled: true,
   },
   {
     title: "Beach Resort",
     message: "Beach Resort website made with reactjs",
     image: BeachResort,
-    madeWith: ["react"],
+    madeWith: [{ src: ReactIcon, name: "React" }],
     link: "https://paramesh-krishna-beachresort.netlify.app/",
   },
   {
     title: "Mobile Ecommerce App",
     message: "Ecommerce website made with reactjs",
     image: MobileApp,
-    madeWith: ["react"],
+    madeWith: [{ src: ReactIcon, name: "React" }],
     link: "https://parameshkrishnaecommerce.netlify.app/",
   },
   {
     title: "App with redux",
     message: "Ecommerce website with reactjs and redux",
     image: WaterBottle,
-    madeWith: ["react", "redux"],
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux" },
+    ],
     link: "https://paramesh-krishna-waterbottle-app.netlify.app/",
   },
-  // {
-  //   title: "Covid-19 tracker",
-  //   message: "Covid-19 tracker with reactjs",
-  //   image: Covid,
-  //   madeWith: ["react", "chartjs"],
-  //   link: "https://parameshkrishna-covid19-tracker.netlify.app/"
-  // },
   {
-    title: "Budget Calculator with Context Api",
+    title: "Budget Calculator with Context API",
     message: "Budget Calculator made with reactjs and context api",
     image: Budget,
-    madeWith: ["react"],
+    madeWith: [{ src: ReactIcon, name: "React" }],
     link: "https://paramesh-krishna-budget-caluclator.netlify.app/",
   },
   {
     title: "Image Gallery",
     message: "Image gallery with redux saga",
     image: ImageGallery,
-    madeWith: ["react", "redux"],
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux" },
+    ],
     link: "https://parameshkrishna-image-gallery-with-saga.netlify.app/",
   },
+  {
+    title: "E-Commerce",
+    message: "E-Commerce app with react",
+    image: SmileApp,
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux" },
+    ],
+    link: "https://pk-ecommerce-site.netlify.app",
+  },
+  {
+    title: "RTK Query",
+    message: "Posts with RTK Query",
+    image: PostWithRtkQuery,
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux" },
+    ],
+    link: "https://posts-with-rtk-query.netlify.app/",
+  },
+  {
+    title: "Pagination & Authentication",
+    message: "Pagination and authentication with React and Redux",
+    image: SmileWebApp,
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux" },
+    ],
+    link: "https://smile-web-app.netlify.app/",
+  },
+  {
+    title: "App with Redux Tool Kit",
+    message: "App with Redux Toolkit with pagination",
+    image: ReduxToolkit,
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux Toolkit" },
+    ],
+    link: "https://imaginative-queijadas-f281e4.netlify.app/",
+  },
 ];
+
+// const theme = createTheme({
+//   components: {
+//     MuiCard: {
+//       styleOverrides: {
+//         root: {
+//           "&.MuiEngagementCard--01": {
+//             transition: "0.3s",
+//             maxWidth: 300,
+//             margin: "auto",
+//             boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
+//             "&:hover": {
+//               boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)",
+//             },
+//             "& .MuiCardMedia-root": {
+//               paddingTop: "56.25%",
+//             },
+//             "& .MuiCardContent-root": {
+//               textAlign: "left",
+//               padding: 16, // Replace muiBaseTheme.spacing.unit
+//             },
+//             "& .MuiDivider-root": {
+//               margin: "16px 0", // Replace muiBaseTheme.spacing.unit * 3
+//             },
+//             "& .MuiTypography--heading": {
+//               fontWeight: "bold",
+//               fontFamily: "Dancing Script",
+//             },
+//             "& .MuiTypography--subheading": {
+//               lineHeight: 1.8,
+//               fontFamily: "Dancing Script",
+//               fontSize: "16px",
+//             },
+//             "& .MuiAvatar-root": {
+//               display: "inline-block",
+//               border: "2px solid white",
+//             },
+//           },
+//         },
+//       },
+//     },
+//   },
+// });
 
 const muiBaseTheme = createMuiTheme();
 
@@ -151,83 +241,153 @@ const theme = {
     },
   },
 };
-
 function Project() {
   return (
     <MuiThemeProvider theme={createMuiTheme(theme)}>
       <div className="App">
         <Grid container className="grid_container">
           {projects.map((item) => (
-            <Grid
-              className="item"
-              style={{ zIndex: 9 }}
-              item
-              mt={2}
-              sm={12}
-              md={3}
-            >
-              <a
-                target="_blank"
-                style={{ textDecoration: "none" }}
-                href={item.link}
-              >
-                <div style={{ marginTop: "40px", marginBottom: "40px" }}>
-                  <Card
-                    style={{ minHeight: "430px" }}
-                    mt={2}
-                    mb={2}
-                    className={"MuiEngagementCard--01"}
-                  >
-                    <CardMedia
-                      className={"MuiCardMedia-root"}
-                      image={item.image}
-                    />
-                    <CardContent className={"MuiCardContent-root"}>
-                      <Typography
-                        className={"MuiTypography--heading"}
-                        variant={"h6"}
-                        gutterBottom
-                      >
-                        {item.title}
-                      </Typography>
-                      <Typography
-                        className={"MuiTypography--subheading"}
-                        variant={"caption"}
-                      >
-                        {item.message}
-                      </Typography>
-                      <Divider className={"MuiDivider-root"} light />
-                      {/* {faces.map((face) => (
-                      <Avatar
-                        className={"MuiAvatar-root"}
-                        key={face}
-                        src={face}
-                      />
-                    ))} */}
-
-                      {item.madeWith.includes("react") && (
-                        <Avatar className={"MuiAvatar-root"} src={ReactIcon} />
-                      )}
-                      {item.madeWith.includes("redux") && (
-                        <Avatar className={"MuiAvatar-root"} src={Redux} />
-                      )}
-
-                      {item.madeWith.includes("mongo") && (
-                        <Avatar className={"MuiAvatar-root"} src={Mongo} />
-                      )}
-                      {item.madeWith.includes("node") && (
-                        <Avatar className={"MuiAvatar-root"} src={Node} />
-                      )}
-                    </CardContent>
-                  </Card>
-                </div>
-              </a>
-            </Grid>
+            <NormalCard item={item} />
           ))}
         </Grid>
       </div>
     </MuiThemeProvider>
   );
 }
+
+// const NormalCard = ({ item }) => {
+//   return (
+//     <Grid
+//       className="item"
+//       style={{ zIndex: 9 }}
+//       item
+//       mt={2}
+//       sm={12}
+//       md={3}
+//       key={item.title}
+//     >
+//       <a target="_blank" style={{ textDecoration: "none" }} href={item.link}>
+//         <div style={{ marginTop: "40px", marginBottom: "40px" }}>
+//           <Card
+//             style={{ minHeight: "430px" }}
+//             mt={2}
+//             mb={2}
+//             className={"MuiEngagementCard--01"}
+//           >
+//             <CardMedia className={"MuiCardMedia-root"} image={item.image} />
+//             <CardContent className={"MuiCardContent-root"}>
+//               <Typography
+//                 className={"MuiTypography--heading"}
+//                 variant={"h6"}
+//                 gutterBottom
+//               >
+//                 {item.title}
+//               </Typography>
+//               <Typography
+//                 className={"MuiTypography--subheading"}
+//                 variant={"caption"}
+//               >
+//                 {item.message}
+//               </Typography>
+//               <Divider className={"MuiDivider-root"} light />
+//               {item.madeWith.map((tech, index) => (
+//                 <Avatar
+//                   key={index}
+//                   className={"MuiAvatar-root"}
+//                   src={tech.src}
+//                   title={tech.name}
+//                 />
+//               ))}
+//             </CardContent>
+//           </Card>
+//         </div>
+//       </a>
+//     </Grid>
+//   );
+// };
+
+const NormalCard = ({ item }) => {
+  const disabledStyle = {
+    pointerEvents: "none",
+    opacity: 0.6,
+    cursor: "not-allowed",
+  };
+
+  return (
+    <Grid
+      className="item"
+      style={{ zIndex: 9 }}
+      item
+      mt={2}
+      sm={12}
+      md={3}
+      key={item.title}
+    >
+      <a
+        target="_blank"
+        style={{
+          textDecoration: "none",
+          ...(item.disabled ? disabledStyle : {}),
+        }}
+        href={item.disabled ? undefined : item.link}
+      >
+        <div style={{ marginTop: "40px", marginBottom: "40px" }}>
+          <Card
+            style={{
+              minHeight: "430px",
+              ...(item.disabled
+                ? { backgroundColor: "#f5f5f5", color: "#aaa" } // Disabled styles
+                : {}),
+            }}
+            mt={2}
+            mb={2}
+            className={"MuiEngagementCard--01"}
+          >
+            <CardMedia
+              className={"MuiCardMedia-root"}
+              image={item.image}
+              style={item.disabled ? { filter: "grayscale(100%)" } : {}}
+            />
+            <CardContent className={"MuiCardContent-root"}>
+              <Typography
+                className={"MuiTypography--heading"}
+                variant={"h6"}
+                gutterBottom
+              >
+                {item.title}
+              </Typography>
+              <Typography
+                className={"MuiTypography--subheading"}
+                variant={"caption"}
+              >
+                {item.message}
+              </Typography>
+              <Divider className={"MuiDivider-root"} light />
+
+              {item.madeWith.map((tech, index) => (
+                <Avatar
+                  key={index}
+                  className={"MuiAvatar-root"}
+                  src={tech.src}
+                  title={tech.name}
+                />
+              ))}
+              <div>
+                {item.disabled && (
+                  <Typography
+                    variant={"caption"}
+                    style={{ color: "#d32f2f", fontWeight: "bold" }}
+                  >
+                    This website is currently disabled due to technical errors.
+                  </Typography>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </a>
+    </Grid>
+  );
+};
 
 export default Project;

@@ -15,9 +15,9 @@ function Footer() {
         >
           <a
             style={{ textDecoration: "none", color: "#fff" }}
-            href="mailto:parameshkrishna98@gmail.com"
+            href="mailto:parameshkrisna98@gmail.com"
           >
-            parameshkrishna98@gmail.com
+            parameshkrisna98@gmail.com
           </a>
         </p>
       </Box>

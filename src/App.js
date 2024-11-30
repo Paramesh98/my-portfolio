@@ -18,7 +18,7 @@ function App() {
       <Title />
       <Heading title="About Me" />
       <AboutMe />
-      <Heading title="Projects Taken" />
+      <Heading title="Projects Done" />
       <Project />
       <Heading title="Contact Me" />
       <ImageSlider />

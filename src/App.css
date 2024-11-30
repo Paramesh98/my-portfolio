@@ -1,0 +1,10 @@
+.container {
+  background: url("./assets/background.jpg") no-repeat left center / cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 50px;
+}

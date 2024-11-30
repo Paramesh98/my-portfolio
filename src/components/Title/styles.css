@@ -1,0 +1,28 @@
+.title-container {
+  position: absolute;
+  top: 50%;
+  color: #ffffff;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.typical {
+  font-family: monospace;
+}
+
+.title-container h1 {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .title-container h1 {
+    font-size: 0.75rem;
+  }
+
+  .title-container {
+    position: absolute;
+    top: 10%;
+  }
+}

@@ -18,11 +18,11 @@
 
 @media only screen and (max-width: 500px) {
   .title-container h1 {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .title-container {
     position: absolute;
-    top: 10%;
+    top: 110px;
   }
 }

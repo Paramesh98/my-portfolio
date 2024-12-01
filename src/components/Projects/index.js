@@ -38,39 +38,6 @@ import { Link } from "react-router-dom";
 // Updated project data with avatar images in the "madeWith" array
 const projects = [
   {
-    title: "E-commerce",
-    message:
-      "Fully functioning e-commerce app with customer/seller/admin login",
-    image: Ecommerce,
-    madeWith: [
-      { src: ReactIcon, name: "React" },
-      { src: Redux, name: "Redux" },
-      { src: Node, name: "Node" },
-      { src: Mongo, name: "Mongo" },
-    ],
-    link: "https://heuristic-fermi-7e0d8f.netlify.app/",
-    disabled: true,
-  },
-  // {
-  //   title: "Calender",
-  //   message: "A google like calendar with react and momentjs",
-  //   image: Calender,
-  //   madeWith: [{ src: ReactIcon, name: "React" }],
-  //   link: "https://calender-app-98.netlify.app/",
-  // },
-  {
-    title: "Social Media App",
-    message: "Social media app made with react node mongodb",
-    image: Instagram,
-    madeWith: [
-      { src: ReactIcon, name: "React" },
-      { src: Node, name: "Node" },
-      { src: Mongo, name: "Mongo" },
-    ],
-    link: "https://parameshkrisna-insttagram.netlify.app/",
-    disabled: true,
-  },
-  {
     title: "Beach Resort",
     message: "Beach Resort website made with reactjs",
     image: BeachResort,
@@ -151,6 +118,39 @@ const projects = [
     ],
     link: "https://imaginative-queijadas-f281e4.netlify.app/",
   },
+  {
+    title: "E-commerce",
+    message:
+      "Fully functioning e-commerce app with customer/seller/admin login",
+    image: Ecommerce,
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Redux, name: "Redux" },
+      { src: Node, name: "Node" },
+      { src: Mongo, name: "Mongo" },
+    ],
+    link: "https://heuristic-fermi-7e0d8f.netlify.app/",
+    disabled: true,
+  },
+  // {
+  //   title: "Calender",
+  //   message: "A google like calendar with react and momentjs",
+  //   image: Calender,
+  //   madeWith: [{ src: ReactIcon, name: "React" }],
+  //   link: "https://calender-app-98.netlify.app/",
+  // },
+  {
+    title: "Social Media App",
+    message: "Social media app made with react node mongodb",
+    image: Instagram,
+    madeWith: [
+      { src: ReactIcon, name: "React" },
+      { src: Node, name: "Node" },
+      { src: Mongo, name: "Mongo" },
+    ],
+    link: "https://parameshkrisna-insttagram.netlify.app/",
+    disabled: true,
+  },
 ];
 
 // const theme = createTheme({
@@ -178,11 +178,11 @@ const projects = [
 //             },
 //             "& .MuiTypography--heading": {
 //               fontWeight: "bold",
-//               fontFamily: "Dancing Script",
+//               fontFamily: "monospace",
 //             },
 //             "& .MuiTypography--subheading": {
 //               lineHeight: 1.8,
-//               fontFamily: "Dancing Script",
+//               fontFamily: "monospace",
 //               fontSize: "16px",
 //             },
 //             "& .MuiAvatar-root": {
@@ -222,12 +222,12 @@ const theme = {
           },
           "& .MuiTypography--heading": {
             fontWeight: "bold",
-            fontFamily: "Dancing Script",
+            fontFamily: "monospace",
           },
           "& .MuiTypography--subheading": {
             lineHeight: 1.8,
-            fontFamily: "Dancing Script",
-            fontSize: "16px",
+            fontFamily: "monospace",
+            fontSize: "13px",
           },
           "& .MuiAvatar-root": {
             display: "inline-block",

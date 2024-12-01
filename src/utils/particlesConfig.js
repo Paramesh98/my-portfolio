@@ -120,7 +120,7 @@ export const nonCollidableParticlesForMobile = {
         quantity: 5,
       },
       repulse: {
-        distance: 80,
+        distance: 40,
         duration: 0.9,
       },
     },
@@ -131,7 +131,7 @@ export const nonCollidableParticlesForMobile = {
     },
     links: {
       color: "#ffffff",
-      distance: 150,
+      distance: 40,
       enable: true,
       opacity: 0.5,
       width: 1,
@@ -157,14 +157,14 @@ export const nonCollidableParticlesForMobile = {
     //   value: { min: 1, max: 5 },
     // },
     number: {
-      value: 50,
+      value: 70,
     },
     color: {
       value: "#ffffff",
     },
     links: {
       enable: true,
-      distance: 120,
+      distance: 50,
     },
     shape: {
       type: "circle",
@@ -174,8 +174,8 @@ export const nonCollidableParticlesForMobile = {
     },
     size: {
       value: {
-        min: 2,
-        max: 4,
+        min: 1,
+        max: 2,
       },
     },
     move: {
